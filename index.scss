@@ -1,0 +1,491 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    cursor: pointer;
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 1100px;
+    margin: auto;
+}
+
+.logo{
+    width: 100%;
+    display: flex;
+    // position: fixed;
+    justify-content: center;
+    background-color: rgb(197, 238, 238);
+    transition-duration: 1s;
+    &:hover{
+        background-color: black;
+        .logo-4{
+            transition-duration: 2s;
+            color: #ffbf2b;
+            margin-right: 200px;
+        }
+        .logo-5{
+            transition-duration: 2s;
+            color: #ffbf2b;
+            margin-left: 200px;
+        }
+        .logo-1{
+            transition-duration: 2s;
+            color: #55ff2b;
+            margin-right: 150px;
+        }
+        .logo-3{
+            transition-duration: 2s;
+            color: #55ff2b;
+            margin-left: 150px;
+        }
+        .logo-2{
+            font-size: 80px;
+        }
+    }
+    .logo-1{
+        font-size: 50px;
+        color: green;
+        margin-right: 30px;
+    }
+    .logo-2{
+        font-size: 60px;
+        color: #ffbf2b;
+    }
+    .logo-3{
+        font-size: 50px;
+        color: green;
+        margin-left: 30px;
+    }
+    .logo-4{
+        font-size: 60px;
+        color: blue;
+        margin-right: 30px;
+    }
+    .logo-5{
+        font-size: 60px;
+        color: blue;
+        margin-left: 30px;
+    }
+}
+
+nav{
+    background-color: rgb(63, 241, 116);
+    // position: fixed;
+    padding: 0 135px;
+    z-index: 9999;
+    transition-duration: 1s;
+    &:hover{
+        background-color: aqua;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo-nav{
+            font-size: 40px;
+            font-weight: bold;
+            color: black;
+            transition-duration: .5s;
+            &:hover{
+                color: red;
+            }
+        }
+        .navbar-ul{
+            display: flex;
+            li{
+                font-size: 18px;
+                list-style: none;
+                padding: 0 30px;
+                a{
+                    font-weight: bold;
+                    color: black;
+                    text-decoration: none;
+                    transition-duration: .3s;
+                    &:hover{
+                        color: red;
+                    }
+                }
+             }
+        }
+    }
+}
+
+#header{
+    background: {
+        image: url(./assets/Doga-Manzara-Duvar-Kagidi-386-resim-9890.jpg);
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+    }
+    width: 100%;
+    height: 100vh;
+    color: lime;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 100px 50px;
+        .text-header{
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 20px
+        }
+        .text-lorem{
+            color: aqua;
+        }
+        button{
+            width: 200px;
+            height: 40px;
+            margin-top: 30px;
+            border-radius: 15px;
+            cursor: pointer;
+            background-color: lime;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+#doctor{
+    padding: 50px 0;
+    .container{
+        .doctor-title{
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: rgb(57, 214, 214);
+        }
+        .doctor-img-text{
+            display: flex;
+            align-items: center;
+            .doctor-img{
+                width: 1900px;
+                height: 400px;
+                .d-img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .doctor-text{
+                padding: 30px;
+                .doctor-text-t{
+                    font-size: 24px;
+                    color: rgb(57, 214, 214);
+                    margin-bottom: 20px;
+                }
+                .doctor-text-lorem{
+                    color: grey;
+                    margin-bottom: 20px;
+                }
+                .doctor-div{
+                    .doctor-text-icon-text{
+                        display: flex;
+                        padding: 0 20px;
+                        margin-bottom: 0px;
+                        // border: 1px solid black;
+                        .doctor-text-icon{
+                            font-size: 40px;
+                            color: red;
+                            margin-top: 12px;
+                        }
+                        .doctor-text-text{
+                            margin-left: 20px;
+                            margin-bottom: 20px;
+                            .doctor-text-title{
+                                font-size: 18px;
+                                font-weight: bold;
+                                color: rgb(57, 214, 214);
+                            }
+                            .doctor-text-lorem-1{
+                                color: grey;
+                                margin-bottom: -10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#police{
+    padding-bottom: 20px;
+    background-color: lightblue;
+        .img-police{
+            width: 100%;
+        }
+        .police-all-img{
+            display: flex;
+            justify-content: space-between;
+            .police-1{
+                width: 24%;
+            }
+            .police-2{
+                width: 24%;
+            }
+            .police-3{
+                width: 24%;
+            }
+            .police-4{
+                width: 24%;
+            }
+        }
+    
+}
+
+#fire{
+    padding: 30px 0;
+    background-color: #ffbf2b;
+    .container{
+        margin-bottom: 10px;
+        .fire-logo{
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+        }
+        .info-fire{
+            text-align: center;
+            color: white;
+        }
+        .fire-img{
+            display: flex;
+            justify-content: space-between;
+            .fire-1{
+                width: 24%;
+            }
+        }
+        .fire-img-1{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+            .fire-2{
+                width: 24%;
+            }
+        }
+    }
+    .fire-car{
+        width: 96%;
+        height: 600px;
+        margin: auto;
+        .fire-car-1{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+#teacher{
+    padding: 30px 0;
+    .container{
+        text-align: center;
+        .teacher-logo{
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .teacher-img-info{
+            display: flex;
+            align-items: center;
+            .teacher-info{}
+            .teacher-book{}
+        }
+        .teacher-img-text{
+            display: flex;
+            justify-content: space-between;
+            .teacher-img{
+                .teacher-photo{
+                    width: 100%;
+                    height: 360px;
+                }
+            }
+            .teacher-text-t{
+                .teacher-text-t-1{
+                    width: 550px;
+                    margin-left: 20px;
+                    padding: 0 20px;
+                    border-radius: 20px;
+                    margin-bottom: 20px;
+                    background-color: black;
+                    border: 1px solid black;
+                    .teacher-lorem{
+                        text-align: center;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#programmer{
+    padding: 30px 0; 
+    position: relative;
+    margin-bottom: 50px;
+    .container{
+        .program-logo{
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            color:rgb(63, 241, 116);
+            margin-bottom: 20px;
+        }
+        .programmer-photo{
+            .program-photo{
+                width: 100%;
+            }
+        }
+        .program-tag{
+           
+            .program-tag-1{
+                position: absolute;
+                top: 595px;
+                left: 240px;
+                .photo-tag{}
+            }
+            .program-tag-2{
+                position: absolute;
+                top: 40px;
+                right: 10px;
+                .photo-tag{}
+            }
+            .program-tag-3{
+                position: absolute;
+                top: 550px;
+                right: 230px;
+                .photo-tag{}
+            }
+            .program-tag-4{
+                position: absolute;
+                top: 40px;
+                left: 10px;
+                .photo-tag{}
+            }
+            .program-tag-5{
+                position: absolute;
+                top: 500px;
+                left: 10px;
+                .photo-tag{}
+            }
+            .program-tag-6{
+                position: absolute;
+                top: 270px;
+                left: 10px;
+                .photo-tag{}
+            }
+            .program-tag-7{
+                position: absolute;
+                top: 500px;
+                right: 20px;
+                .photo-tag{}
+            }
+            .program-tag-9{
+                position: absolute;
+                top: 310px;
+                right: 10px;
+                .photo-tag{}
+            }
+            .program-tag-10{
+                position: absolute;
+                top: 600px;
+                left: 550px;
+                .photo-tag{}
+            }
+        }
+    }
+}
+
+#my-port{
+    height: 550px;
+    padding: 50px;
+    position: relative;
+    background-color: black;
+    .container{
+        text-align: center;
+        .my-info{
+            font-size: 50px;
+            font-weight: bold;
+            color: limegreen;
+        }
+        .name{
+            font-size: 45px;
+            font-weight: bold;
+            color: tomato;
+        }
+        .surname{
+            font-size: 45px;
+            font-weight: bold;
+            color: yellowgreen;
+        }
+        .birth{
+            font-size: 45px;
+            font-weight: bold;
+            color: skyblue;
+        }
+        .work{
+            font-size: 45px;
+            font-weight: bold;
+            color: lime; 
+        }
+        .work-1{
+            color: grey;
+        }
+        .work-2{
+           color: #ffbf2b; 
+        }
+        .tel{
+            font-size: 45px;
+            font-weight: bold;
+            color: white;
+        }
+        .now{
+            font-size: 45px;
+            font-weight: bold;
+            color: salmon;
+        }
+        .my-img{
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            top: 0px;
+            left: 50px;
+            .my-photo{
+                width: 100%;
+                height: 100%;  
+                border-radius: 50%;  
+                padding: 25px;
+            }
+        }
+        .my-img-1{
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            top: 0px;
+            right: 50px;
+            .my-photo-1{
+                width: 100%;
+                height: 100%;  
+                border-radius: 50%;  
+                padding: 25px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1000px){
+    nav{
+        background-color: red;
+    }
+}

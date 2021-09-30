@@ -1,0 +1,597 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  cursor: pointer;
+  overflow-x: hidden;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 1100px;
+  margin: auto;
+}
+
+.logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #c5eeee;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.logo:hover {
+  background-color: black;
+}
+
+.logo:hover .logo-4 {
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  color: #ffbf2b;
+  margin-right: 200px;
+}
+
+.logo:hover .logo-5 {
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  color: #ffbf2b;
+  margin-left: 200px;
+}
+
+.logo:hover .logo-1 {
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  color: #55ff2b;
+  margin-right: 150px;
+}
+
+.logo:hover .logo-3 {
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  color: #55ff2b;
+  margin-left: 150px;
+}
+
+.logo:hover .logo-2 {
+  font-size: 80px;
+}
+
+.logo .logo-1 {
+  font-size: 50px;
+  color: green;
+  margin-right: 30px;
+}
+
+.logo .logo-2 {
+  font-size: 60px;
+  color: #ffbf2b;
+}
+
+.logo .logo-3 {
+  font-size: 50px;
+  color: green;
+  margin-left: 30px;
+}
+
+.logo .logo-4 {
+  font-size: 60px;
+  color: blue;
+  margin-right: 30px;
+}
+
+.logo .logo-5 {
+  font-size: 60px;
+  color: blue;
+  margin-left: 30px;
+}
+
+nav {
+  background-color: #3ff174;
+  padding: 0 135px;
+  z-index: 9999;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+nav:hover {
+  background-color: aqua;
+}
+
+nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .container .logo-nav {
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+nav .container .logo-nav:hover {
+  color: red;
+}
+
+nav .container .navbar-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .container .navbar-ul li {
+  font-size: 18px;
+  list-style: none;
+  padding: 0 30px;
+}
+
+nav .container .navbar-ul li a {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+nav .container .navbar-ul li a:hover {
+  color: red;
+}
+
+#header {
+  background-image: url(./assets/Doga-Manzara-Duvar-Kagidi-386-resim-9890.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  color: lime;
+}
+
+#header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 100px 50px;
+}
+
+#header .container .text-header {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#header .container .text-lorem {
+  color: aqua;
+}
+
+#header .container button {
+  width: 200px;
+  height: 40px;
+  margin-top: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: lime;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+}
+
+#header .container button a {
+  text-decoration: none;
+  color: white;
+}
+
+#doctor {
+  padding: 50px 0;
+}
+
+#doctor .container .doctor-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #39d6d6;
+}
+
+#doctor .container .doctor-img-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#doctor .container .doctor-img-text .doctor-img {
+  width: 1900px;
+  height: 400px;
+}
+
+#doctor .container .doctor-img-text .doctor-img .d-img {
+  width: 100%;
+  height: 100%;
+}
+
+#doctor .container .doctor-img-text .doctor-text {
+  padding: 30px;
+}
+
+#doctor .container .doctor-img-text .doctor-text .doctor-text-t {
+  font-size: 24px;
+  color: #39d6d6;
+  margin-bottom: 20px;
+}
+
+#doctor .container .doctor-img-text .doctor-text .doctor-text-lorem {
+  color: grey;
+  margin-bottom: 20px;
+}
+
+#doctor .container .doctor-img-text .doctor-text .doctor-div .doctor-text-icon-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px;
+  margin-bottom: 0px;
+}
+
+#doctor .container .doctor-img-text .doctor-text .doctor-div .doctor-text-icon-text .doctor-text-icon {
+  font-size: 40px;
+  color: red;
+  margin-top: 12px;
+}
+
+#doctor .container .doctor-img-text .doctor-text .doctor-div .doctor-text-icon-text .doctor-text-text {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#doctor .container .doctor-img-text .doctor-text .doctor-div .doctor-text-icon-text .doctor-text-text .doctor-text-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #39d6d6;
+}
+
+#doctor .container .doctor-img-text .doctor-text .doctor-div .doctor-text-icon-text .doctor-text-text .doctor-text-lorem-1 {
+  color: grey;
+  margin-bottom: -10px;
+}
+
+#police {
+  padding-bottom: 20px;
+  background-color: lightblue;
+}
+
+#police .img-police {
+  width: 100%;
+}
+
+#police .police-all-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#police .police-all-img .police-1 {
+  width: 24%;
+}
+
+#police .police-all-img .police-2 {
+  width: 24%;
+}
+
+#police .police-all-img .police-3 {
+  width: 24%;
+}
+
+#police .police-all-img .police-4 {
+  width: 24%;
+}
+
+#fire {
+  padding: 30px 0;
+  background-color: #ffbf2b;
+}
+
+#fire .container {
+  margin-bottom: 10px;
+}
+
+#fire .container .fire-logo {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+#fire .container .info-fire {
+  text-align: center;
+  color: white;
+}
+
+#fire .container .fire-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#fire .container .fire-img .fire-1 {
+  width: 24%;
+}
+
+#fire .container .fire-img-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 10px;
+}
+
+#fire .container .fire-img-1 .fire-2 {
+  width: 24%;
+}
+
+#fire .fire-car {
+  width: 96%;
+  height: 600px;
+  margin: auto;
+}
+
+#fire .fire-car .fire-car-1 {
+  width: 100%;
+  height: 100%;
+}
+
+#teacher {
+  padding: 30px 0;
+}
+
+#teacher .container {
+  text-align: center;
+}
+
+#teacher .container .teacher-logo {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#teacher .container .teacher-img-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#teacher .container .teacher-img-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#teacher .container .teacher-img-text .teacher-img .teacher-photo {
+  width: 100%;
+  height: 360px;
+}
+
+#teacher .container .teacher-img-text .teacher-text-t .teacher-text-t-1 {
+  width: 550px;
+  margin-left: 20px;
+  padding: 0 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background-color: black;
+  border: 1px solid black;
+}
+
+#teacher .container .teacher-img-text .teacher-text-t .teacher-text-t-1 .teacher-lorem {
+  text-align: center;
+  color: white;
+}
+
+#programmer {
+  padding: 30px 0;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+#programmer .container .program-logo {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #3ff174;
+  margin-bottom: 20px;
+}
+
+#programmer .container .programmer-photo .program-photo {
+  width: 100%;
+}
+
+#programmer .container .program-tag .program-tag-1 {
+  position: absolute;
+  top: 595px;
+  left: 240px;
+}
+
+#programmer .container .program-tag .program-tag-2 {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+
+#programmer .container .program-tag .program-tag-3 {
+  position: absolute;
+  top: 550px;
+  right: 230px;
+}
+
+#programmer .container .program-tag .program-tag-4 {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+}
+
+#programmer .container .program-tag .program-tag-5 {
+  position: absolute;
+  top: 500px;
+  left: 10px;
+}
+
+#programmer .container .program-tag .program-tag-6 {
+  position: absolute;
+  top: 270px;
+  left: 10px;
+}
+
+#programmer .container .program-tag .program-tag-7 {
+  position: absolute;
+  top: 500px;
+  right: 20px;
+}
+
+#programmer .container .program-tag .program-tag-9 {
+  position: absolute;
+  top: 310px;
+  right: 10px;
+}
+
+#programmer .container .program-tag .program-tag-10 {
+  position: absolute;
+  top: 600px;
+  left: 550px;
+}
+
+#my-port {
+  height: 550px;
+  padding: 50px;
+  position: relative;
+  background-color: black;
+}
+
+#my-port .container {
+  text-align: center;
+}
+
+#my-port .container .my-info {
+  font-size: 50px;
+  font-weight: bold;
+  color: limegreen;
+}
+
+#my-port .container .name {
+  font-size: 45px;
+  font-weight: bold;
+  color: tomato;
+}
+
+#my-port .container .surname {
+  font-size: 45px;
+  font-weight: bold;
+  color: yellowgreen;
+}
+
+#my-port .container .birth {
+  font-size: 45px;
+  font-weight: bold;
+  color: skyblue;
+}
+
+#my-port .container .work {
+  font-size: 45px;
+  font-weight: bold;
+  color: lime;
+}
+
+#my-port .container .work-1 {
+  color: grey;
+}
+
+#my-port .container .work-2 {
+  color: #ffbf2b;
+}
+
+#my-port .container .tel {
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+}
+
+#my-port .container .now {
+  font-size: 45px;
+  font-weight: bold;
+  color: salmon;
+}
+
+#my-port .container .my-img {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 0px;
+  left: 50px;
+}
+
+#my-port .container .my-img .my-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 25px;
+}
+
+#my-port .container .my-img-1 {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 0px;
+  right: 50px;
+}
+
+#my-port .container .my-img-1 .my-photo-1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 25px;
+}
+
+@media all and (max-width: 1000px) {
+  nav {
+    background-color: red;
+  }
+}
+/*# sourceMappingURL=index.css.map */
